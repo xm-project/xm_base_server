@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="base_server" type="base_server_node" name="base_server" output="screen" >
+	<rosparam file="/home/dell/catkin_ws/src/base_server/launch/follow_costmap.yaml" command="load"/>
+	</node>
+</launch>

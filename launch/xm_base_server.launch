@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="base_server" type="base_server_node" name="base_server" output="screen" >
+        <param name="way_of_follow" value="laser"/>
+        <param name="follow"  value="false"/>
+        <param name="shopping"  value="false"/>
+	<rosparam file="/home/xm/xm_catkin_ws/src/xm_package/base_server/launch/follow_costmap.yaml" command="load"/>
+	<!--rosparam file="/home/xm/xm_catkin_ws/src/xm_package/base_server/launch/dwa_local_planner_params.yaml" command="load"/-->
+	</node>
+</launch>
